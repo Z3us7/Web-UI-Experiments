@@ -56,7 +56,7 @@ class PixelKey {
     const dx = mouse.x - this.x;
     const dy = mouse.y - this.y;
     const distance = Math.sqrt(dx * dx + dy * dy);
-    const hoverRadius = 40; 
+    const hoverRadius = 40; //change this to adjust the hover effect the appears with the cursor
 
     if (distance < hoverRadius) {
       const force = (hoverRadius - distance) / hoverRadius;
